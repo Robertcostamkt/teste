@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Fertil Caps - Seu Sonho de Engravidar</title>
+    
+  <link rel="canonical" href="../index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Open-source framework for publishing content",
+      "datePublished": "2015-10-07T12:02:41Z",
+      "image": [
+        "logo.jpg"
+      ]
+    }
+  </script>  
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap">  
+  
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <section class="mod-headline">
+    <div class="container">
+      <div class=" justify-content-center text-center">
+          <img src="assets/images/FERTILCAPS-logo-white.png" class="img-fluid" alt="Responsive image">
+          <h1>Seu sonho de <span class="font-parsley cor-roxo">engravidar</span> começa aqui!</h1>
+          <p class="text-headline" style="font-size:20px">O tratamento nº 1 do mundo para FERTILIDADE</p>
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe width="640" height="480" src="https://www.youtube.com/embed/MN1suHajBrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4 align-middle">
+        <h2 class="font-parsley cor-roxo ">único</h2>
+        <p class="text-headline">Sem riscos à saúde, sem exigência de receita médica, aumentando as chances de engravidar naturalmente.</p>
+      </div>
+      <div class="col-md-4 align-middle"><img src="assets/images/FERTILCAPS-selo-natural.png" class="img-fluid" alt="Responsive image"></div>
+      <div class="col-md-4 align-middle">
+        <h2 class="font-parsley cor-roxo">eficaz</h2>
+        <p class="text-headline">Porque o Fertil Caps é feito com ingredientes naturais que tem a eficácia comprovada e a concentração necessária para ter resultados máximos na sua Fertilidade.</p>
+      </div>
+      <a class="btn scrollSuave" href="#destinoancora" ><i class="fas fa-check-double"></i>SIM! EU QUERO<span class="text-bt">ENGRAVIDAR COM FERTIL CAPS</span></a>
+    </div>   
+  </section>
+
+
+
+  <section class="mod-como-funciona" id="comofunciona"></section>
+  <section class="mod-depoimentos" id="depoimentos"></section>
+  <section class="mod-produtos scrollSuave" id="destinoancora"></section>
+  <section class="mod-selo-garantia" id="garantia"></section>
+  <section class="mod-duvidas" id="duvidas"></section>
+
+  <footer>
+    <div class="container">      
+    </div>
+  </footer>
+  
+  <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/params.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){      
+      //--
+      let urlKit2 = "https://app.monetizze.com.br/checkout/KJZ37669?split=12" + getTrackParams();
+      $(".kit2").attr("href", urlKit2);
+        
+      let urlKit4 = "https://app.monetizze.com.br/checkout/KLG38093?split=12" + getTrackParams();
+      $(".kit4").attr("href", urlKit4);
+        
+      let urlKit6 = "https://app.monetizze.com.br/checkout/KGJ38094?split=12" + getTrackParams();
+      $(".kit6").attr("href", urlKit6);
+      
+      //--
+      var $doc = $('html, body');
+      $('.scrollSuave').click(function(){
+        $doc.animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+      });
+      return false;
+      
+      //--
+      $('.modal').on('show.bs.modal', function(event) {
+        $(this).find('iframe').attr("src", $(event.relatedTarget).data('url'));
+      });
+      
+      $('.modal').on('hidden.bs.modal', function(e) {
+        $(this).find('iframe').attr("src", "");
+      });
+
+      //--
+      $(function(){
+        $('.timer').startTimer({
+          onComplete: function(element) {
+            $('html, body').addClass('bodyTimeoutBackground');
+          }
+        }).click(function(){
+          location.reload();
+        });
+      });
+
+    });
+
+    (function(factory){
+      // Using as a CommonJS module
+      if (typeof module === "object" && typeof module.exports === "object") {
+        // jQuery must be provided as argument when used
+        // as a CommonJS module.
+        //
+        // For example:
+        //   let $ = require("jquery");
+        //   require("jquery-simple-timer")($);
+        module.exports = function(jq) {factory(jq, window, document);}
+      } else {
+        factory(jQuery, window, document);
+      }
+    }
+    (function($, window, document, undefined) {
+      // Polyfill new JS features for older browser
+      Number.isFinite = Number.isFinite || function(value) {
+        return typeof value === 'number' && isFinite(value);
+      }
+
+      var timer;
+      var Timer = function(targetElement) {
+        this._options = {};
+        this.targetElement = targetElement;
+        return this;
+      };
+
+      Timer.start = function(userOptions, targetElement) {
+        timer = new Timer(targetElement);
+        mergeOptions(timer, userOptions);
+        return timer.start(userOptions);
+      };
+
+      // Writes to `this._options` object so that other
+      // functions can access it without having to
+      // pass this object as argument multiple times.
+      function mergeOptions(timer, opts) {
+        opts = opts || {};
+        // Element that will be created for hours, minutes, and seconds.
+        timer._options.elementContainer = opts.elementContainer || 'li';
+        var classNames = opts.classNames || {};
+        timer._options.classNameSeconds = classNames.seconds || 'jst-seconds', timer._options.classNameMinutes = classNames.minutes || 'jst-minutes', timer._options.classNameHours = classNames.hours || 'jst-hours'
+      };
+
+      Timer.prototype.start = function(options) {
+        var that = this;
+        var createSubElements = function(timerBoxElement) {
+          var seconds = document.createElement(that._options.elementContainer);
+          seconds.className = that._options.classNameSeconds;
+
+          var minutes = document.createElement(that._options.elementContainer);
+          minutes.className = that._options.classNameMinutes;
+
+          var hours = document.createElement(that._options.elementContainer);
+          hours.className = that._options.classNameHours;
+
+          var clearElement = document.createElement(that._options.elementContainer);
+          clearElement.className = that._options.classNameClearDiv;
+
+          return timerBoxElement.
+            append(hours).
+            append(minutes).
+            append(seconds);
+        };
+        
+        this.targetElement.each(function(_index, timerBox) {
+          var that = this;
+          var timerBoxElement = $(timerBox);
+          var cssClassSnapshot = timerBoxElement.attr('class');
+
+          timerBoxElement.on('complete', function() {
+            clearInterval(timerBoxElement.intervalId);
+          });
+
+          timerBoxElement.on('complete', function() {
+            timerBoxElement.onComplete(timerBoxElement);
+          });
+
+          timerBoxElement.on('complete', function() {
+            timerBoxElement.addClass(that._options.classNameTimeout);
+          });
+
+          timerBoxElement.on('complete', function() {
+            if (options && options.loop === true) {
+              timer.resetTimer(timerBoxElement, options, cssClassSnapshot);
+            }
+          });
+
+          timerBoxElement.on('pause', function() {
+            clearInterval(timerBoxElement.intervalId);
+            timerBoxElement.paused = true;
+          });
+
+          timerBoxElement.on('resume', function() {
+            timerBoxElement.paused = false;
+            that.startCountdown(timerBoxElement, {
+              secondsLeft: timerBoxElement.data('timeLeft')
+            });            
+          });
+          
+          createSubElements(timerBoxElement);
+          return this.startCountdown(timerBoxElement, options);
+
+        }.bind(this));
+      };
+
+      /**
+       * Resets timer and add css class 'loop' to indicate the timer is in a loop.
+       * $timerBox {jQuery object} - The timer element
+       * options {object} - The options for the timer
+       * css - The original css of the element
+      */
+      Timer.prototype.resetTimer = function($timerBox, options, css) {
+        var interval = 0;
+          if (options.loopInterval) {
+            interval = parseInt(options.loopInterval, 10) * 1000;
+          }
+          setTimeout(function() {
+            $timerBox.trigger('reset');
+            $timerBox.attr('class', css + ' loop');
+            timer.startCountdown($timerBox, options);
+        }, interval);
+      };
+
+      Timer.prototype.fetchSecondsLeft = function(element) {
+        var secondsLeft = element.data('seconds-left');
+        var minutesLeft = element.data('minutes-left');
+
+        if (Number.isFinite(secondsLeft)) {
+          return parseInt(secondsLeft, 10);
+        } else if (Number.isFinite(minutesLeft)) {
+          return parseFloat(minutesLeft) * 60;
+        } else {
+          throw 'Missing time data';
+        }
+      };
+
+      Timer.prototype.startCountdown = function(element, options) {
+        options = options || {};
+
+        var intervalId = null;
+        var defaultComplete = function() {
+          clearInterval(intervalId);
+          return this.clearTimer(element);
+        }.bind(this);
+
+        element.onComplete = options.onComplete || defaultComplete;
+        element.allowPause = options.allowPause || false;
+        if (element.allowPause) {
+          element.on('click', function() {
+            if (element.paused) {
+              element.trigger('resume');
+            } else {
+              element.trigger('pause');
+            }
+          });
+        }
+        
+        var secondsLeft = options.secondsLeft || this.fetchSecondsLeft(element);
+        var refreshRate = options.refreshRate || 1000;
+        var endTime = secondsLeft + this.currentTime();
+        var timeLeft = endTime - this.currentTime();
+
+        this.setFinalValue(this.formatTimeLeft(timeLeft), element);
+
+        intervalId = setInterval((function() {
+          timeLeft = endTime - this.currentTime();
+          // When timer has been idle and only resumed past timeout,
+          // then we immediatelly complete the timer.
+          if (timeLeft < 0) {
+            timeLeft = 0;
+          }
+          element.data('timeLeft', timeLeft);
+          this.setFinalValue(this.formatTimeLeft(timeLeft), element);
+        }.bind(this)), refreshRate);
+
+        element.intervalId = intervalId;
+      };
+
+      Timer.prototype.clearTimer = function(element) {
+        element.find('.jst-seconds').text('00');
+        element.find('.jst-minutes').text('00');
+        element.find('.jst-hours').text('00');
+      };
+
+      Timer.prototype.currentTime = function() {
+        return Math.round((new Date()).getTime() / 1000);
+      };
+
+      Timer.prototype.formatTimeLeft = function(timeLeft) {
+        var lpad = function(n, width) {
+          width = width || 2;
+          n = n + '';
+
+          var padded = null;
+
+          if (n.length >= width) {
+            padded = n;
+          } else {
+            padded = Array(width - n.length + 1).join(0) + n;
+          }
+
+          return padded;
+        };
+
+        var hours = Math.floor(timeLeft / 3600);
+        timeLeft -= hours * 3600;
+
+        var minutes = Math.floor(timeLeft / 60);
+        timeLeft -= minutes * 60;
+
+        var seconds = parseInt(timeLeft % 60, 10);
+
+        if (+hours === 0 && +minutes === 0 && +seconds === 0) {
+          return [];
+        } else {
+          return [lpad(hours), lpad(minutes), lpad(seconds)];
+        }
+      };
+
+      Timer.prototype.setFinalValue = function(finalValues, element) {
+        if (finalValues.length === 0) {
+          this.clearTimer(element);
+          element.trigger('complete');
+          return false;
+        }
+
+        element.find('.' + this._options.classNameSeconds).text(finalValues.pop());
+        element.find('.' + this._options.classNameMinutes).text(finalValues.pop() + '');
+        element.find('.' + this._options.classNameHours).text(finalValues.pop() + '');
+      };
+
+      $.fn.startTimer = function(options) {
+        this.TimerObject = Timer;
+        Timer.start(options, this);
+        return this;
+      };
+
+    }));
+
+  </script>
+
+</body>
+</html>
